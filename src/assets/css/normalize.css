@@ -1,0 +1,176 @@
+@import url('./variables.css');
+
+/* Normalize */
+
+::-webkit-scrollbar {
+    width: 10px;
+    transition: .3s ease-in-out;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #e9e9e9;
+    transition: .3s ease-in-out;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--color-orange);
+    transition: .3s ease-in-out;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-orange);
+    transition: .3s ease-in-out;
+}
+
+a {
+    text-decoration: none;
+}
+
+p, a {
+    font-family: 'Ubuntu';
+}
+
+
+body {
+    margin: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 45px;
+    font-family: 'Bodoni Moda';
+    font-weight: 700;
+    color: var(--color-orange);
+}
+
+h2 {
+    font-size: 40px;
+    font-family: 'Bodoni Moda';
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 20pt;
+    font-family: 'Bodoni Moda';
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 18pt;
+    font-family: 'Bodoni Moda';
+    font-weight: 300;
+}
+
+.bg-black-body {
+    background: var(--color-black);
+    color: #fff !important;
+    transition: all .3s ease-in-out;
+}
+
+.bg-white-body {
+    background: var(--color-white);
+    transition: all .3s ease-in-out;
+}
+
+body.bg-black-body .menu__links a {
+    color: var(--color-white);
+}
+
+body.bg-white-body .menu__links a {
+    color: var(--color-black);
+}
+
+body.bg-black-body .socials_medias a {
+    color: var(--color-white);
+    font-weight: 300;
+}
+
+body.bg-white-body .socials_medias a {
+    color: var(--color-black);
+    font-weight: 300;
+}
+
+body.bg-black-body .logo__wrapper>img>svg .cls-1 {
+    fill: #fff;
+}
+
+body.bg-white-body .logo__wrapper>img>svg .cls-1 {
+    fill: #000;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity .3s;
+}
+
+.fade-enter,
+.fade-leave-to {
+    opacity: 0;
+}
+
+.router-link-exact-active {
+    color: var(--color-orange) !important;
+    transition: all .3s ease-in-out;
+}
+
+.menu__links a {
+    font-family: 'Bodoni Moda';
+}
+
+.section__container {
+    float: right;
+    width: calc(100% - 250px);
+    transform: translateY(120px);
+    z-index: 0;
+    padding: 50px 0 50px 0;
+}
+
+/* Home */
+
+.page-home h4 {
+    font-family: 'Ubuntu';
+    font-size: 25px;
+}
+
+/* About */
+
+
+.section__up .container .left-side .description>p:nth-child(3) {
+    margin-top: 50px;
+}
+
+.section__up .container .left-side .description>p:nth-child(3) a {
+    padding: 15px 50px;
+    background: var(--color-orange);
+    color: var(--color-white);
+    transition: all .3s ease-in-out;
+}
+
+.section__up .container .left-side .description>p:nth-child(1) {
+    margin-bottom: 20px;
+}
+
+.section__up .container .left-side .description>p:nth-child(3) a:hover {
+    color: var(--color-white);
+    background: var(--color-orange-hover);
+}
+
+.section__down h2,
+p {
+    margin-bottom: 50px;
+}
